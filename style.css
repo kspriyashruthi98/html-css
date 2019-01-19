@@ -1,0 +1,19 @@
+body{
+    background-color: blueviolet;
+    font-size: 100%;
+}
+h2{
+    text-align: left;
+    text-decoration-color: aqua;
+}
+span{
+color:red;
+
+}
+.student {
+font-family:  Courier;
+}
+#heading{
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

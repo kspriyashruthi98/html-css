@@ -8,12 +8,16 @@ h2{
 }
 span{
 color:red;
-
+font-size: 50px;
 }
 .student {
+    
 font-family:  Courier;
+
 }
 #heading{
+    background-color: blanchedalmond;
     color: blue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
 }

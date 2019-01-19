@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <h2>validate the phone number using javascript</h2>
+        
+
+    
+        enter phone number <input type="text" name="phonenumber" id="pn">
+        <button type="button" onclick="myfunction()">submit</button>
+        <script>
+            function myfunction()
+            {
+                var x;
+                x=document.getElementById("pn").value;
+                if(x.length>10)
+                {
+                  alert("enter a valid no"); 
+                  return false; 
+                }
+                else{
+                alert("yr no saved");   
+                return true;         }
+            }
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,174 @@
+<html>
+    <head>
+        <title>profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+      <style>
+        body{
+          font-family: Arial, Helvetica, sans-serif;
+          color:white;
+           }
+          
+           .split {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+         .header {
+            padding-top: 2px;
+  top:0;
+  height:10%;
+margin:0%;
+  text-align: left;
+  background: violet;
+  color: white;
+  font-size: 10px;
+         }
+
+       .contact {
+    
+  text-align:left;
+  background: #1abc9c;
+  color: white;
+  font-size: 10px; 
+
+}
+
+.left {
+  left: 0;
+  background-color: blueviolet;
+}
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+address {
+  display: block;
+  font-style: italic;
+} 
+table{
+    font-family:  serif;
+    
+}
+          </style>
+                  <script>
+                        function myfunction()
+                        {
+                            var x;
+                            x=document.getElementById("pn").value;
+                            if(x.length!=10)
+                            {
+                              alert("enter a valid no"); 
+                              return false; 
+                            }
+   
+                            return true;         
+                            var y = document.forms["f1"]["first_name"].value;
+                            var z = document.forms["f1"]["last_name"].value;
+    if ((y||z) == "") {
+        window.alert("Name must be filled out");
+        return false;
+    }
+	return true;
+                   }
+                    </script>
+            
+    </head> 
+    
+        
+    
+    <body>
+        <form name="f1" onClick="return myfunction()">
+            <table width="450px">
+
+                <tr>
+                    
+                    <td><label for="first_name">First name</label></td>
+                    <td><input type="text"name="first_name" maxlength="50" size="30" pattern="[A-Za-z]{6}"   required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="last_name">Last name</label></td>
+                    <td><input type="text"name="last_name" maxlength="50" size="30"pattern="[A-Za-z]{5}" required></td>
+                </tr>
+<tr>
+    <td><label for="dob">Date_of_Birth</label></td>
+    <td><input type="date"name="dob" maxlength="50" size="30" required></td>
+</tr>
+                <tr>
+                    <td><label for="email">Email Id</label></td>
+                    <td><input type="email"name="email" maxlength="80" size="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone_no">Mobile Number</label></td>
+                    <td><input type="tel"name="phone_no" maxlength="10" size="30" id="pn"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><textarea name="address" maxlength="1050" cols="40" rows="3"></textarea></td>
+                    
+                </tr>
+                <tr>
+                        <td>Branch</td>
+                        <td>
+                        <select name="branch">
+                        <option value=""></option>
+                        <option value="CIVIL">CIVIL</option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="ice">ICE</option>
+                        <option value="it">IT</option>
+                        <option value="MECH">MECH</option>
+                        </select>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>Sem</td>
+                        <td>
+                        <select name="sem">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        
+                        </select>
+                        </td>
+                        </tr>
+                        
+                        <tr>
+                        
+                        
+                        <td>Batch</td>
+                        <td>
+                        <select name="batch">
+                        <option value="15">2015-2019</option>
+                        <option value="16">2016-2020</option>
+                        <option value="17">2017-2021</option>
+                        <option value="18">2018-2022</option>
+                        
+                        </select>
+                        
+                        
+                        </td>
+                        </tr>
+                        
+                <tr>
+                    <td colspan="2" style="text-align:center">
+                    <input type="submit" value="submit">
+            </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
